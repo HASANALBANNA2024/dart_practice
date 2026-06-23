@@ -1,17 +1,17 @@
 void main() {
-  /// primary students list
+  // Primary students list
   List<String> initialStudents = ["Tonmoy", "Sakib", "Rahat", "Nafis"];
 
-  /// conditional variable
+  // Conditional variable
   bool isNewStudent = true;
 
-  //spread operator
+  // Spread operator and collection if to combine lists
   List<String> students = [...initialStudents, if (isNewStudent) "Rahim"];
 
-  /// set of course
+  // Set of courses
   Set<String> courses = {"Flutter", "Dart", "Git"};
 
-  /// create map using name and age
+  // Create map using name and age
   Map<String, int> studentAges = {
     "Tonmoy": 22,
     "Sakib": 23,
@@ -20,19 +20,19 @@ void main() {
     if (isNewStudent) "Rahim": 20,
   };
 
-  /// ---- output print report ----
+  // ---- Output Print Report ----
 
-  /// student list print
+  // Student list print
   print("Students:");
   print(students);
   print("");
 
-  /// course set print
+  // Course set print
   print("Courses:");
   print(courses);
   print("");
 
-  /// using loop for print map data
+  // Using loop to print map data
   print("Student Ages:");
   studentAges.forEach((name, age) {
     print("$name -> $age");
