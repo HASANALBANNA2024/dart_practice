@@ -25,3 +25,17 @@ class EntertainmentExpense extends Expense {
   EntertainmentExpense(String title, double amount)
     : super(title, amount, "Entertainment");
 }
+
+void main() {
+  /// Polymorphism: Storing various subclass objects into a parent type List
+  List<Expense> expense = [];
+
+  while (true) {
+    ///printing menu
+    print("\n===== Expense Tracker =====");
+    print("1. Add Expense");
+    print("2. View All Expenses");
+    print("3. Show Total Expenses");
+    print("4. Exit");
+  }
+}
